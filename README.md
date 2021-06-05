@@ -4,7 +4,7 @@ Wagyu UIkit is a set of React components and hooks used to build pages on Wagyu'
 
 ## Install
 
-`yarn add @wagyuswap/uikit`
+`yarn add @wagyu-swap-libs/uikit
 
 ## Setup
 
