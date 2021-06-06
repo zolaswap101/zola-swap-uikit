@@ -1,3 +1,20 @@
+import { LinkStatus } from "./types";
+
+export const status = {
+  LIVE: <LinkStatus>{
+    text: "LIVE",
+    color: "failure",
+  },
+  SOON: <LinkStatus>{
+    text: "SOON",
+    color: "warning",
+  },
+  NEW: <LinkStatus>{
+    text: "NEW",
+    color: "success",
+  },
+};
+
 export const links = [
   {
     label: "Home",
@@ -10,11 +27,11 @@ export const links = [
     items: [
       {
         label: "Exchange",
-        href: "https://exchange.pancakeswap.finance",
+        href: "https://exchange.wagyuswap.finance",
       },
       {
         label: "Liquidity",
-        href: "https://exchange.pancakeswap.finance/#/pool",
+        href: "https://exchange.wagyuswap.finance/#/pool",
       },
     ],
   },
@@ -22,6 +39,7 @@ export const links = [
     label: "Farms",
     icon: "FarmIcon",
     href: "/farms",
+    status: status.LIVE,
   },
   {
     label: "Pools",
@@ -39,12 +57,20 @@ export const links = [
     href: "/nft",
   },
   {
+    label: "Team Battle",
+    icon: "TeamBattleIcon",
+    href: "/competition",
+    status: status.SOON,
+  },
+  {
     label: "Profile & Teams",
     icon: "GroupsIcon",
+    status: status.LIVE,
     items: [
       {
         label: "Leaderboard",
         href: "/teams",
+        status: status.NEW,
       },
       {
         label: "YourProfile",
@@ -59,19 +85,19 @@ export const links = [
     items: [
       {
         label: "Overview",
-        href: "https://pancakeswap.info",
+        href: "https://wagyuswap.info",
       },
       {
         label: "Tokens",
-        href: "https://pancakeswap.info/tokens",
+        href: "https://wagyuswap.info/tokens",
       },
       {
         label: "Pairs",
-        href: "https://pancakeswap.info/pairs",
+        href: "https://wagyuswap.info/pairs",
       },
       {
         label: "Accounts",
-        href: "https://pancakeswap.info/accounts",
+        href: "https://wagyuswap.info/accounts",
       },
     ],
   },
@@ -95,19 +121,19 @@ export const links = [
     items: [
       {
         label: "Voting",
-        href: "https://voting.pancakeswap.finance",
+        href: "https://voting.wagyuswap.finance",
       },
       {
         label: "Github",
-        href: "https://github.com/pancakeswap",
+        href: "https://github.com/wagyuswap",
       },
       {
         label: "Docs",
-        href: "https://docs.pancakeswap.finance",
+        href: "https://docs.wagyuswap.finance",
       },
       {
         label: "Blog",
-        href: "https://pancakeswap.medium.com",
+        href: "https://wagyuswap.medium.com",
       },
     ],
   },
@@ -120,7 +146,7 @@ export const socials = [
     items: [
       {
         label: "English",
-        href: "https://t.me/pancakeswap",
+        href: "https://t.me/wagyuswap",
       },
       {
         label: "Bahasa Indonesia",
@@ -136,15 +162,15 @@ export const socials = [
       },
       {
         label: "Italiano",
-        href: "https://t.me/pancakeswap_ita",
+        href: "https://t.me/wagyuswap_ita",
       },
       {
         label: "русский",
-        href: "https://t.me/pancakeswap_ru",
+        href: "https://t.me/wagyuswap_ru",
       },
       {
         label: "Türkiye",
-        href: "https://t.me/pancakeswapturkiye",
+        href: "https://t.me/wagyuswapturkiye",
       },
       {
         label: "Português",
@@ -156,11 +182,11 @@ export const socials = [
       },
       {
         label: "日本語",
-        href: "https://t.me/pancakeswapjp",
+        href: "https://t.me/wagyuswapjp",
       },
       {
         label: "Français",
-        href: "https://t.me/pancakeswapfr",
+        href: "https://t.me/wagyuswapfr",
       },
       {
         label: "Announcements",
@@ -175,7 +201,7 @@ export const socials = [
   {
     label: "Twitter",
     icon: "TwitterIcon",
-    href: "https://twitter.com/pancakeswap",
+    href: "https://twitter.com/wagyuswap",
   },
 ];
 

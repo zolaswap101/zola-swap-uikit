@@ -1,2 +1,2 @@
-export { default as FallingWagyues } from "./FallingWagyues";
+export { default as FallingBunnies } from "./FallingWagyues";
 export type { FallingWagyuesProps } from "./types";

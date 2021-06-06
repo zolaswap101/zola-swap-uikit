@@ -4,7 +4,7 @@ import { useWalletModal } from "../../WalletModal";
 import { Login } from "../../WalletModal/types";
 
 interface Props {
-  account?: string;
+  account?: string | null;
   login: Login;
   logout: () => void;
 }

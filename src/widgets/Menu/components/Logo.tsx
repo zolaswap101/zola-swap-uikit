@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
 import { LogoIcon } from "../../../components/Svg";
 import Flex from "../../../components/Box/Flex";
@@ -13,21 +13,35 @@ interface Props {
   href: string;
 }
 
+const blink = keyframes`
+  0%,  100% { transform: scaleY(1); } 
+  50% { transform:  scaleY(0.1); } 
+`;
+
 const StyledLink = styled(Link)`
   display: flex;
   align-items: center;
   .mobile-icon {
-    width: 40px;
-    ${({ theme }) => theme.mediaQueries.nav} {
-      width: 32px;
-    }
+    width: 32px;
   }
   .desktop-icon {
     margin: 5px 0 0 5px;
-    width: 156px;
+    width: 160px;
     display: none;
     ${({ theme }) => theme.mediaQueries.nav} {
       display: block;
+    }
+  }
+  .right-eye {
+    animation-delay: 20ms;
+  }
+  &:hover {
+    .left-eye,
+    .right-eye {
+      transform-origin: center 60%;
+      animation-name: ${blink};
+      animation-duration: 350ms;
+      animation-iteration-count: 1;
     }
   }
 `;

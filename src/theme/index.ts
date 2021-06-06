@@ -1,7 +1,9 @@
 import { AlertTheme } from "../components/Alert/types";
 import { CardTheme } from "../components/Card/types";
+import { WagyuToggleTheme } from "../components/WagyuToggle/types";
 import { RadioTheme } from "../components/Radio/types";
 import { ToggleTheme } from "../components/Toggle/types";
+import { TooltipTheme } from "../components/Tooltip/types";
 import { NavTheme } from "../widgets/Menu/types";
 import { ModalTheme } from "../widgets/Modal/types";
 import { Colors, Breakpoints, MediaQueries, Spacing, Shadows, Radii, ZIndices } from "./types";
@@ -14,8 +16,10 @@ export interface WagyuTheme {
   card: CardTheme;
   nav: NavTheme;
   modal: ModalTheme;
+  wagyuToggle: WagyuToggleTheme;
   radio: RadioTheme;
   toggle: ToggleTheme;
+  tooltip: TooltipTheme;
   breakpoints: Breakpoints;
   mediaQueries: MediaQueries;
   spacing: Spacing;
