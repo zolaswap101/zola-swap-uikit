@@ -1648,9 +1648,9 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
-"@wagyuswap-libs/eslint-config-wagyu@^1.0.1":
+"@pancakeswap-libs/eslint-config-pancake@^1.0.1":
   version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@wagyuswap-libs/eslint-config-wagyu/-/eslint-config-wagyu-1.0.1.tgz#f6e93e5462efe6a0dbf77c508fdf41bc5ac5542f"
+  resolved "https://registry.yarnpkg.com/@pancakeswap-libs/eslint-config-pancake/-/eslint-config-pancake-1.0.1.tgz#f6e93e5462efe6a0dbf77c508fdf41bc5ac5542f"
   integrity sha512-pMslyfo7dEL+Zi9dBZk1cU7iHAISHFnPd0LozY8+l8aqG6EEsoAM1EPD/mdsgS0raXlaAFc/+slVpb3UlQMxtg==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^4.7.0"
@@ -2858,6 +2858,13 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-dom@^17.0.5":
+  version "17.0.6"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.6.tgz#c158325cf91b196270bc0f4af73463f149e7eafe"
+  integrity sha512-MGTI+TudxAnGTj8aco8mogaPSJGK2Whje7OZh1CxNLRyhJpTZg/pGQpIbCT0eCVFQyH7UFpdvCqQEThHIp/gsA==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-router-dom@^5.1.6":
   version "5.1.7"
   resolved "https://registry.yarnpkg.com/@types/react-router-dom/-/react-router-dom-5.1.7.tgz#a126d9ea76079ffbbdb0d9225073eb5797ab7271"
@@ -3341,9 +3348,9 @@ ajv@^6.1.0, ajv@^6.10.0, ajv@^6.10.2, ajv@^6.12.2, ajv@^6.12.4, ajv@^6.12.5:
     uri-js "^4.2.2"
 
 ajv@^8.0.1:
-  version "8.5.0"
-  resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.5.0.tgz#695528274bcb5afc865446aa275484049a18ae4b"
-  integrity sha512-Y2l399Tt1AguU3BPRP9Fn4eN+Or+StUGWCUpbnFyXSo8NZ9S4uj+AG2pjs5apK+ZMOwYOz1+a+VKvKH7CudXgQ==
+  version "8.6.0"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-8.6.0.tgz#60cc45d9c46a477d80d92c48076d972c342e5720"
+  integrity sha512-cnUG4NSBiM4YFBxgZIj/In3/6KX+rQ2l2YPRVcvAMQGWEPKuXoPIhxzwqh31jA3IPbI4qEOp/5ILI4ynioXsGQ==
   dependencies:
     fast-deep-equal "^3.1.1"
     json-schema-traverse "^1.0.0"
