@@ -1,8 +1,8 @@
-# 🥞 Wagyu UIkit
+# Wagyu UIkit
 
 [![Version](https://img.shields.io/npm/v/@wagyuswap-libs/uikit)](https://www.npmjs.com/package/@wagyuswap-libs/uikit) [![Size](https://img.shields.io/bundlephobia/min/@wagyuswap-libs/uikit)](https://www.npmjs.com/package/@wagyuswap-libs/uikit)
 
-Wagyu UIkit is a set of React components and hooks used to build pages on Wagyu's apps. It also contains a theme file for dark and light mode.
+Wagyu UIkit is a set of React components and hooks used to build pages on Wagyu's apps. It also contains a theme file for dark mode.
 
 ## Install
 
@@ -16,7 +16,7 @@ Before using Wagyu UIkit, you need to provide the theme file to styled-component
 
 ```
 import { ThemeProvider } from 'styled-components'
-import { light, dark } from '@wagyuswap-libs/uikit'
+import { dark } from '@wagyuswap-libs/uikit'
 ...
 <ThemeProvider theme={isDark}>...</ThemeProvider>
 ```
