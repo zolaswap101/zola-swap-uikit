@@ -23,11 +23,9 @@ const StyledLink = styled(Link)`
   align-items: center;
   .mobile-icon {
     width: 32px;
-    ${({ theme }) => theme.mediaQueries.nav} {
-      display: none;
-    }
   }
   .desktop-icon {
+    margin: 5px 0 0 5px;
     width: 160px;
     display: none;
     ${({ theme }) => theme.mediaQueries.nav} {
@@ -67,11 +65,11 @@ const Logo: React.FC<Props> = ({ isPushed, togglePush, isDark, href }) => {
         )}
       </MenuButton>
       {isAbsoluteUrl ? (
-        <StyledLink as="a" href={href} aria-label="Pancake home page">
+        <StyledLink as="a" href={href} aria-label="Wagyu home page">
           {innerLogo}
         </StyledLink>
       ) : (
-        <StyledLink to={href} aria-label="Pancake home page">
+        <StyledLink to={href} aria-label="Wagyu home page">
           {innerLogo}
         </StyledLink>
       )}

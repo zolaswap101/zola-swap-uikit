@@ -1,6 +1,6 @@
 import React from "react";
 import { renderWithTheme } from "../../testHelpers";
-import FallingBunnies from "../../components/FallingBunnies/FallingBunnies";
+import FallingWagyues from "../../components/FallingWagyues/FallingWagyues";
 
 beforeEach(() => {
   jest.spyOn(global.Math, "random").mockReturnValue(0.5);
@@ -11,7 +11,7 @@ afterEach(() => {
 });
 
 it("renders correctly", () => {
-  const { asFragment } = renderWithTheme(<FallingBunnies count={1} />);
+  const { asFragment } = renderWithTheme(<FallingWagyues count={1} />);
   expect(asFragment()).toMatchInlineSnapshot(`
     <DocumentFragment>
       .c1 {

@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import BunnyIcon from "../Svg/Icons/Logo";
-import { BunnyProps, FallingBunniesProps } from "./types";
+import WagyuIcon from "../Svg/Icons/Logo";
+import { WagyuProps, FallingWagyuesProps } from "./types";
 
 const bunnyFall = keyframes`
   0% {
@@ -20,7 +20,7 @@ const bunnyFall = keyframes`
   }
 `;
 
-const Bunny = styled.div<BunnyProps>`
+const Wagyu = styled.div<WagyuProps>`
   display: inline-flex;
   position: fixed;
   top: 0;
@@ -65,19 +65,19 @@ const Bunny = styled.div<BunnyProps>`
   }
 `;
 
-const FallingBunnies: React.FC<FallingBunniesProps> = ({
+const FallingWagyues: React.FC<FallingWagyuesProps> = ({
   count = 30,
   size = 32,
   iterations = Infinity,
   duration = 10,
 }) => {
   const bunnies = [...Array(count)].map((_, index) => (
-    <Bunny key={String(index)} position={Math.random() * 100} iterations={iterations} duration={duration}>
-      <BunnyIcon width={size} height={size} />
-    </Bunny>
+    <Wagyu key={String(index)} position={Math.random() * 100} iterations={iterations} duration={duration}>
+      <WagyuIcon width={size} height={size} />
+    </Wagyu>
   ));
 
   return <div>{bunnies}</div>;
 };
 
-export default FallingBunnies;
+export default FallingWagyues;

@@ -15,7 +15,7 @@ export default {
   argTypes: {},
 };
 
-const langs: Language[] = [...Array(20)].map((_, i) => ({ code: `en${i}`, language: `English${i}` }));
+const langs: Language[] = [...Array(20)].map((_, i) => ({ code: `en${i}`, language: `English${i}`, locale: `en${i}` }));
 
 // This hook is used to simulate a props change, and force a re rendering
 const useProps = () => {
@@ -28,7 +28,7 @@ const useProps = () => {
     langs,
     setLang: noop,
     currentLang: "EN",
-    cakePriceUsd: 0.023158668932877668,
+    wagyuPriceUsd: 0.023158668932877668,
     links,
     profile: null,
   });
@@ -44,7 +44,7 @@ const useProps = () => {
         langs,
         setLang: noop,
         currentLang: "EN",
-        cakePriceUsd: 0.023158668932877668,
+        wagyuPriceUsd: 0.023158668932877668,
         links,
         profile: null,
       });
@@ -128,7 +128,7 @@ export const WithNoProfile: React.FC = () => {
         langs={langs}
         setLang={noop}
         currentLang="EN"
-        cakePriceUsd={0.23158668932877668}
+        wagyuPriceUsd={0.23158668932877668}
         links={links}
         profile={{
           profileLink: "/profile",
@@ -170,11 +170,11 @@ export const WithProfile: React.FC = () => {
         langs={langs}
         setLang={noop}
         currentLang="EN"
-        cakePriceUsd={0.23158668932877668}
+        wagyuPriceUsd={0.23158668932877668}
         links={links}
         profile={{
-          username: "pancakeswap",
-          image: "https://pancakeswap.finance/images/nfts/blueberries-preview.png",
+          username: "wagyuswap",
+          image: "https://wagyuswap.finance/images/nfts/blueberries-preview.png",
           profileLink: "/profile",
           noProfileLink: "/no-profile",
         }}
@@ -224,11 +224,11 @@ export const WithSubmenuSelected: React.FC = () => {
         langs={langs}
         setLang={noop}
         currentLang="EN"
-        cakePriceUsd={0.23158668932877668}
+        wagyuPriceUsd={0.23158668932877668}
         links={links}
         profile={{
-          username: "pancakeswap",
-          image: "https://pancakeswap.finance/images/nfts/blueberries-preview.png",
+          username: "wagyuswap",
+          image: "https://wagyuswap.finance/images/nfts/blueberries-preview.png",
           profileLink: "/profile",
           noProfileLink: "/no-profile",
         }}

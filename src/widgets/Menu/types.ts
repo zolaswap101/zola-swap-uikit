@@ -49,7 +49,7 @@ export interface MenuEntry {
 export interface PanelProps {
   isDark: boolean;
   toggleTheme: (isDark: boolean) => void;
-  cakePriceUsd?: number;
+  wagyuPriceUsd?: number;
   currentLang: string;
   langs: Language[];
   setLang: (lang: Language) => void;
@@ -57,8 +57,8 @@ export interface PanelProps {
 }
 
 export interface NavProps extends PanelProps {
-  account?: string;
+  account?: string | null;
   login: Login;
-  profile?: Profile;
+  profile?: Profile | null;
   logout: () => void;
 }

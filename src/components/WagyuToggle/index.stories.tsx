@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import PancakeToggle from "./PancakeToggle";
+import WagyuToggle from "./WagyuToggle";
 
 export default {
-  title: "Components/PancakeToggle",
-  component: PancakeToggle,
+  title: "Components/WagyuToggle",
+  component: WagyuToggle,
 };
 
 export const Default: React.FC = () => {
@@ -14,10 +14,10 @@ export const Default: React.FC = () => {
   return (
     <>
       <div style={{ marginBottom: "32px" }}>
-        <PancakeToggle checked={isChecked} onChange={toggle} />
+        <WagyuToggle checked={isChecked} onChange={toggle} />
       </div>
       <div>
-        <PancakeToggle checked={isChecked} onChange={toggle} scale="sm" />
+        <WagyuToggle checked={isChecked} onChange={toggle} scale="sm" />
       </div>
     </>
   );
