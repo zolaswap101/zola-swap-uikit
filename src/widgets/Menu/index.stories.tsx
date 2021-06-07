@@ -6,7 +6,7 @@ import Heading from "../../components/Heading/Heading";
 import Text from "../../components/Text/Text";
 import { MenuEntry } from "./components/MenuEntry";
 import Menu from "./Menu";
-import { LangType } from "./types";
+import { Language } from "./types";
 import { links } from "./config";
 
 export default {
@@ -15,7 +15,7 @@ export default {
   argTypes: {},
 };
 
-const langs: LangType[] = [...Array(20)].map((_, i) => ({ code: `en${i}`, language: `English${i}` }));
+const langs: Language[] = [...Array(20)].map((_, i) => ({ code: `en${i}`, language: `English${i}` }));
 
 // This hook is used to simulate a props change, and force a re rendering
 const useProps = () => {
@@ -28,7 +28,7 @@ const useProps = () => {
     langs,
     setLang: noop,
     currentLang: "EN",
-    wagyuPriceUsd: 0.023158668932877668,
+    cakePriceUsd: 0.023158668932877668,
     links,
     profile: null,
   });
@@ -44,7 +44,7 @@ const useProps = () => {
         langs,
         setLang: noop,
         currentLang: "EN",
-        wagyuPriceUsd: 0.023158668932877668,
+        cakePriceUsd: 0.023158668932877668,
         links,
         profile: null,
       });
@@ -128,7 +128,7 @@ export const WithNoProfile: React.FC = () => {
         langs={langs}
         setLang={noop}
         currentLang="EN"
-        wagyuPriceUsd={0.23158668932877668}
+        cakePriceUsd={0.23158668932877668}
         links={links}
         profile={{
           profileLink: "/profile",
@@ -170,7 +170,7 @@ export const WithProfile: React.FC = () => {
         langs={langs}
         setLang={noop}
         currentLang="EN"
-        wagyuPriceUsd={0.23158668932877668}
+        cakePriceUsd={0.23158668932877668}
         links={links}
         profile={{
           username: "pancakeswap",
@@ -224,7 +224,7 @@ export const WithSubmenuSelected: React.FC = () => {
         langs={langs}
         setLang={noop}
         currentLang="EN"
-        wagyuPriceUsd={0.23158668932877668}
+        cakePriceUsd={0.23158668932877668}
         links={links}
         profile={{
           username: "pancakeswap",

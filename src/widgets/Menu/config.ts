@@ -1,3 +1,20 @@
+import { LinkStatus } from "./types";
+
+export const status = {
+  LIVE: <LinkStatus>{
+    text: "LIVE",
+    color: "failure",
+  },
+  SOON: <LinkStatus>{
+    text: "SOON",
+    color: "warning",
+  },
+  NEW: <LinkStatus>{
+    text: "NEW",
+    color: "success",
+  },
+};
+
 export const links = [
   {
     label: "Home",
@@ -22,6 +39,7 @@ export const links = [
     label: "Farms",
     icon: "FarmIcon",
     href: "/farms",
+    status: status.LIVE,
   },
   {
     label: "Pools",
@@ -39,12 +57,20 @@ export const links = [
     href: "/nft",
   },
   {
+    label: "Team Battle",
+    icon: "TeamBattleIcon",
+    href: "/competition",
+    status: status.SOON,
+  },
+  {
     label: "Profile & Teams",
     icon: "GroupsIcon",
+    status: status.LIVE,
     items: [
       {
         label: "Leaderboard",
         href: "/teams",
+        status: status.NEW,
       },
       {
         label: "YourProfile",
@@ -124,15 +150,15 @@ export const socials = [
       },
       {
         label: "Bahasa Indonesia",
-        href: "https://t.me/WagyuSwapIndonesia",
+        href: "https://t.me/PancakeSwapIndonesia",
       },
       {
         label: "中文",
-        href: "https://t.me/WagyuSwap_CN",
+        href: "https://t.me/PancakeSwap_CN",
       },
       {
         label: "Tiếng Việt",
-        href: "https://t.me/WagyuSwapVN",
+        href: "https://t.me/PancakeSwapVN",
       },
       {
         label: "Italiano",
@@ -148,11 +174,11 @@ export const socials = [
       },
       {
         label: "Português",
-        href: "https://t.me/WagyuSwapPortuguese",
+        href: "https://t.me/PancakeSwapPortuguese",
       },
       {
         label: "Español",
-        href: "https://t.me/WagyuswapEs",
+        href: "https://t.me/PancakeswapEs",
       },
       {
         label: "日本語",
@@ -164,11 +190,11 @@ export const socials = [
       },
       {
         label: "Announcements",
-        href: "https://t.me/WagyuSwapAnn",
+        href: "https://t.me/PancakeSwapAnn",
       },
       {
         label: "Whale Alert",
-        href: "https://t.me/WagyuSwapWhales",
+        href: "https://t.me/PancakeSwapWhales",
       },
     ],
   },
