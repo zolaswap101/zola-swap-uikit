@@ -119,7 +119,7 @@ const Menu: React.FC<NavProps> = ({
         <Logo
           isPushed={isPushed}
           togglePush={() => setIsPushed((prevState: boolean) => !prevState)}
-          isDark={false}
+          isDark={isDark}
           href={homeLink?.href ?? "/"}
         />
         <Flex>
@@ -132,7 +132,7 @@ const Menu: React.FC<NavProps> = ({
           isPushed={isPushed}
           isMobile={isMobile}
           showMenu={showMenu}
-          isDark={false}
+          isDark={isDark}
           toggleTheme={toggleTheme}
           langs={langs}
           setLang={setLang}
