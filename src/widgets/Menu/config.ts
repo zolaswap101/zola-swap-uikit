@@ -27,11 +27,11 @@ export const links = [
     items: [
       {
         label: "Exchange",
-        href: "https://exchange.wagyuswap.finance",
+        href: "https://lazermoon.finance",
       },
       {
         label: "Liquidity",
-        href: "https://exchange.wagyuswap.finance/#/pool",
+        href: "https://lazermoon.finance/#/pool",
       },
     ],
   },

@@ -23,7 +23,7 @@ const PriceLink = styled.a`
 
 const WagyuPrice: React.FC<Props> = ({ wagyuPriceUsd }) => {
   return wagyuPriceUsd ? (
-    <PriceLink href="https://wagyuswap.info/token/0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82" target="_blank">
+    <PriceLink href="https://zolaswap.finance/info/token/0x8a226293bC6f697A681B0b29f825c149655fEC2d" target="_blank">
       <WagyuRoundIcon width="32px" mr="8px" mt="5px" />
       <Text color="textSubtle" bold>{`$${wagyuPriceUsd.toFixed(3)}`}</Text>
     </PriceLink>
